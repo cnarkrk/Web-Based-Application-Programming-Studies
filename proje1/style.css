@@ -243,4 +243,46 @@ select{
   width: 60px;
 }
 
+
+}
+
+@media(max-width:413px){
+  .navigator{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigator h3{
+
+  font-size: 19px;
+}
+.navigator a {
+  font-size: 15px;
+  padding: 5px;
+}
+
+#name {
+  width: 180px;
+  margin-bottom: 5px;
+}
+
+#taskInput{
+  width: 110px;
+
+}
+#temizleme{
+  width: 60px;
+}
+
+#addBtn{
+
+  width: 60px;
+  height: 35px;
+
+}
+
+#delete{
+  width: 60px;
+}
 }
