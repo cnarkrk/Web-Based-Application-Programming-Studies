@@ -1,0 +1,3 @@
+Bu Program Ne yapıyor ?
+	Programımızın amacı insanların neler yapacaklarını kaydetmektir.
+	Gelişmiş sürümünde fotoğrafları kullanıcıdan almayı düşünüyorum.

@@ -1,0 +1,163 @@
+*{margin: 0px;}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 64, 64);
+}
+.navigator{
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: black;
+    height: 8vh;
+    position: sticky;
+    z-index: 10;
+} 
+.navigator a{
+    text-decoration: none;
+}      
+.navigator h3 {
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration:none;
+}
+
+nav{
+    margin-right: 30px;
+    font-size: 20px;
+    
+}
+nav a{
+    text-decoration: none;
+    margin-left:20px;
+    color: white;
+    cursor: pointer;
+    transition-duration:0.5s;
+    animation: showNav 0.5s ease forwards;
+}
+@keyframes showNav {
+    0%{opacity: 0;
+    transform: translateX(30px);}
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+nav a:first-child{
+    border-right: 1px solid grey;
+    padding-right: 30px ;
+}
+nav a:hover{
+    color: gray;
+}
+.profile-container{
+    width: 200vh;
+    height: 100vh;
+    margin : 10px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    position:relative;
+    
+    
+}
+.profile{
+    width: 250px;
+    height: 350px;
+    margin:30px;
+    background-color: rgb(219, 218, 218);
+    border-radius:20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: showProfile 0.6s ease forwards;
+    
+}
+@keyframes showProfile {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+img{
+    margin-top:80px;
+    margin-bottom: 20px;
+
+}
+h4{
+    margin-bottom: 20px;
+}
+.profilephoto{
+height: 60px;
+width:60px;
+border-radius:50px ;
+}
+ul{list-style: square;}
+
+@media (max-width:376px){
+    .navigator{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    .navigator h3 {
+        font-size: 18px;
+
+    }
+    .navigator a {
+  font-size: 15px;
+  margin: 5px;
+}
+.profile-container{
+
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+}
+@media(max-width:321px){
+.navigator{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigator h3{
+
+  font-size: 14px;
+}
+.navigator a {
+  font-size: 12px;
+  padding: 5px;
+}
+.profile-container{
+
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+}

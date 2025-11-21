@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigator">
+        <h3>To-Do.Com</h3>
+        <nav>
+        <a href="kisiler.html" target="_blank" id ="kisiler">Kişiler</a>
+        <a href="#">Hakkımızda</a>
+        </nav>
+    </div>
+  <div class="general-white">
+  <div class="get-name">
+    <h1>Verilerinizi daha iyi görmek için ismniniz giriniz:</h1>
+    <div class="name">
+        <input type="text" id="name" placeholder="İsmninizi Giriniz"><select name="cinsiyet" id="cins"><option value="erkek">Erkek</option><option value="kadın">Kadın</option></select><button id="isim">Tıklayınız</button>
+        <span id="spaname"></span>
+    </div>
+  </div>
+
+  <h1>To-Do List</h1>
+  <div class="main">
+  <div class="todo-app">
+    <div class="container">
+    <input type="text" id="taskInput" placeholder="Görev ekle...">
+    <div class="buttons"><button id="addBtn">Ekleme</button>
+    <button id="temizleme">Temizle</button> </div></div>
+    <ul id="taskList">
+    <li><button id="delete">Sil</button></li> 
+    </ul>
+    <button id ="gönder" type="button">Kaydet</button>
+  </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
